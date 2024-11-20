@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Streamlit Dashboard</title>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("analysis-analytics-analyzing-annual.jpg");
+        }
+
+        .content {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+
+        button {
+            width: 70%;
+            
+            height: 45px;
+            background: #162938;
+            padding: 10px 20px;
+            font-size: 16px;
+            /* background-color: #007bff; */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <h2>Visualizing Diabetes</h2>
+        
+        
+        <button onclick="openDashboard()">Open Dashboard</button>
+    </div>
+    <style>
+        .button-container{
+            position: relative;
+            width: 410px;
+            height: 400px;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,.5);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(0,0,0,.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .button-container h2{
+            font-size: 24px;
+            color: #333;
+            }
+        }
+    </style>
+      <!-- <div class="additional-statements">
+        <p>Diabetes binary: 0 = no diabetes 1 = prediabetes 2 = diabetes</p>
+        <p1>High BP: 0 = no high BP 1 = high BP</p1>
+        <p2>High Cholesterol: 0 = no high cholesterol 1 = high cholesterol</p2>
+        <p3>Cholesterol Check: 0 = no cholesterol check in 5 years 1 = yes cholesterol check in 5 years</p3>
+        <p4>BMI: Body Mass Index</p4>
+        <p5>Smoker: Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes] 0 = no 1 = yes</p5>
+        <p6>Stroke: (Ever told) you had a stroke. 0 = no 1 = yes</p6>
+        <p7>Heart Disease or Attack: coronary heart disease (CHD) or myocardial infarction (MI) 0 = no 1 = yes</p7>
+        <p8>Physical Activity: physical activity in past 30 days - not including job 0 = no 1 = yes</p8>
+        <p9>Fruits: Consume Fruit 1 or more times per day 0 = no 1 = yes</p9>
+        <p10>Veggies: Consume Vegetables 1 or more times per day 0 = no 1 = yes</p10>
+        <p11>Heavy Alcohol Consumption: (adult men >=14 drinks per week and adult women>=7 drinks per week) 0 = no 1 = yes</p11>
+        <p12>Any Health Care: Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no 1 = yes</p12>
+        <p13>No Doctor because you could not afford: Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 0 	= no 1 = yes</p13>
+        <p14>General Health: Would you say that in general your health is: scale 1-5 1 = excellent 2 = very good 3 = good 4 = fair 5 = poor</p14>
+        <p15>Mental Health: days of poor mental health scale 1-30 days</p15>
+        <p16>Physical Health: physical illness or injury days in past 30 days scale 1-30</p16>
+        <p17>Difficulty in walking: Do you have serious difficulty walking or climbing stairs? 0 = no 1 = yes</p17>
+        <p18>Sex: 0 = female 1 = male</p18>
+        <p19>Age: 13-level age category (_AGEG5YR see codebook) 1 = 18-24 9 = 60-64 13 = 80 or older</p19>
+        <p20>Education: Education level (EDUCA see codebook) scale 1-6 1 = Never attended school or only kindergarten 2 = elementary etc.</p20>
+        <p21>Income: Income scale (INCOME2 see codebook) scale 1-8 1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more</p21>
+    </div> -->
+
+
+    <script>
+        function openDashboard() {
+            // URL of your Streamlit dashboard
+            var dashboardUrl = "http://localhost:8501";  // Replace with your actual URL
+
+            // Open the Streamlit dashboard in a new tab
+            window.open(dashboardUrl, "_blank");
+        }
+    </script>
+</body>
+</html>
